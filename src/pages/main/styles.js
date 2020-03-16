@@ -17,6 +17,7 @@ const Container = styled.main`
       border: 1px solid #ccc;
 
       legend {
+        margin-left: 20px;
       }
     }
   }
@@ -37,15 +38,17 @@ const Input = styled.input`
   margin: 10px;
   padding: 5px 10px;
 
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   border-radius: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
 
   font-size: 1em;
 
   transition: border 0.4s;
 
   &:focus {
-    border: 1px solid #333;
+    border: 1px solid #ccc;
   }
 `;
 
