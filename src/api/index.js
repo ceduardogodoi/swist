@@ -1,7 +1,13 @@
 import axios from 'axios';
 
-const axiosInstance = axios.create({
+const httpClient = axios.create({
   baseURL: 'https://swapi.co/api/'
 });
 
-export { axiosInstance };
+async function fetchPersonagens() {
+  const response = await httpClient.get('people/');
+
+  return response.data.results;
+}
+
+export { fetchPersonagens };

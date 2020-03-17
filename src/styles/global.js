@@ -11,10 +11,16 @@ const GlobalStyles = createGlobalStyle`
     outline: none;
     box-sizing: border-box;
     font-family: 'Pathway Gothic One', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
   }
 
   body {
-    background: #000 url(${wallpaper}) center no-repeat;
+    background: #000 url(${wallpaper}) no-repeat;
+  }
+
+  h1 {
+    color: #fff;
   }
 
   fieldset {
@@ -25,8 +31,8 @@ const GlobalStyles = createGlobalStyle`
     color: #fff;
   }
 
-  h1 {
-    color: #fff;
+  ul {
+    list-style: none;
   }
 
   button {
