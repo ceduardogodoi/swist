@@ -33,6 +33,8 @@ const FormGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 export { Container, Heading, FormGrid, Wrapper };

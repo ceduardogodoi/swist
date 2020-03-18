@@ -23,6 +23,7 @@ const List = styled.ul`
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
     background: #222;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   hr {
@@ -37,12 +38,17 @@ const TitleWrapper = styled.div`
   text-transform: uppercase;
   font-size: 17px;
   text-align: center;
+  cursor: pointer;
 `;
 
 const InfoWrapper = styled.div`
   margin: 20px auto;
   width: 80%;
   font-size: 22px;
+
+  p {
+    cursor: pointer;
+  }
 
   .label {
     color: #bbb;

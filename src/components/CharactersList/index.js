@@ -17,7 +17,13 @@ function CharacterList() {
     setLoading(false);
   }
 
-  useEffect(() => fetchData(), []);
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  function handleClick(character) {
+    console.dir(character);
+  }
 
   return (
     <>
@@ -28,7 +34,7 @@ function CharacterList() {
         <ListWrapper>
           <List>
             {characters.map(character => (
-              <li key={character.name}>
+              <li key={character.name} onClick={() => handleClick(character)}>
                 <TitleWrapper>
                   <h3>{character.name}</h3>
                 </TitleWrapper>
